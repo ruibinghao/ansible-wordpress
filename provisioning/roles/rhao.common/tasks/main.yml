@@ -1,0 +1,6 @@
+---
+# tasks file for rhao.common
+    - name: install required tools
+      apt: name={{item}} state=installed
+      with_items:
+        - unzip
